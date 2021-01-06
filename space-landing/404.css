@@ -1,3 +1,11 @@
+* {
+box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
 .absolute {
     position: absolute;
     top: 50%;
@@ -9,6 +17,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: ghostwhite;
+    box-sizing: border-box;
 }
 
 .body {
@@ -137,7 +146,7 @@ body {
 }
 
 .go-back {
-    margin: 100px 0 0 -65px;
+    margin: 110px 0 0 -65px;
     z-index: 100;
 }
 
@@ -158,6 +167,8 @@ body {
 
 .btn::before {
     content: attr(data-title);
+    font-family: "PT Sans", "arial-rounded", arial, helvetica, san-serif;
+    font-size: 20px;
     display: inline-block;
     padding: 12px 15px;
     border: 0px solid white;
@@ -172,10 +183,12 @@ body {
 
 .btn::after {
     content: attr(data-title);
+    font-family: "PT Sans", "arial-rounded", arial, helvetica, san-serif;
+font-size: 20px;
     padding: 12px 15px;
     position: absolute;
     display: block;
-    top: -14px;
+    top: -18px;
     left: 0px;
     border: 0px solid white;
     border-radius: 7px;
@@ -214,7 +227,6 @@ body {
 }
 
 .btn::after {
-    top: -12px;
     background: rgb(4, 7, 74);
     background: -moz-linear-gradient(90deg, rgba(4, 7, 74, 1) 0%, rgba(117, 107, 233, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(4, 7, 74, 1) 0%, rgba(117, 107, 233, 1) 100%);
