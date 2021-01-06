@@ -75,11 +75,6 @@ body {
     }
 }
 
-.text-white {
-    color: white!important;
-    font-size: 14px;
-}
-
 .gear-left {
     height: 200px;
     z-index: 0;
@@ -118,12 +113,15 @@ body {
 }
 
 .typewriter p {
+    font-weight: 100;
     overflow: hidden;
     border-right: .15em solid white;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    color: white!important;
+    font-size: 14px;
 }
 
 @keyframes typing {
@@ -184,7 +182,7 @@ body {
 .btn::after {
     content: attr(data-title);
     font-family: "PT Sans", "arial-rounded", arial, helvetica, san-serif;
-font-size: 20px;
+    font-size: 20px;
     padding: 12px 15px;
     position: absolute;
     display: block;
